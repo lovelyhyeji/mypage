@@ -1,0 +1,7 @@
+// main.scss  -> main.css로 변환처리
+/* main.css */ 
+@import "_basic/var";
+@import "_basic/mixin";
+@import "_basic/etc";
+
+@import "./portfolio.scss";
