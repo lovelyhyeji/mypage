@@ -1,23 +1,25 @@
 /* portfolio.css */
 @import url("https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css");
-@import url(../icon/icomoon/style.css);
-#wrap { position: relative; width: 1280px; height: auto; font-family: 'NanumSquare'; transform: skew(-0.03deg); }
+@import url("../icon/icomoon/style.css");
+#wrap { width: 1280px; height: auto; }
 
-#headBox { width: 1280px; margin-top: 3rem; }
+#headBox { position: fixed; left: 0; top: 0; z-index: 500; width: 100%; height: 100px; background-color: #fff; }
 
-#headBox #navBox { position: fixed; z-index: 500; width: 100%; height: 100px; }
+#headBox #navBox { width: 1280px; height: 100%; margin: 0 auto; background-color: transparent; font-family: 'NanumSquare'; transform: skew(-0.03deg); }
 
-#headBox #navBox h1 { position: absolute; z-index: 510; width: 150px; height: 70px; margin: 1rem; background-color: #aaa; }
+#headBox #navBox h1 a { display: block; width: 100%; height: 100%; }
+
+#headBox #navBox h1 a i { font-size: 5rem; color: #111; }
 
 #headBox #navBox ul { float: right; margin-top: 2.5rem; }
 
-#headBox #navBox ul li { float: left; width: 50px; margin-right: 5rem; font-weight: bold; }
+#headBox #navBox ul li { float: left; width: 100px; margin-left: 2rem; font-weight: bold; }
 
-#headBox #navBox ul li a { color: #111; }
+#headBox #navBox ul li a { display: block; color: #111; padding: 1rem; transition: all 0.5s ease; }
 
 #headBox #navBox ul li a:hover { font-size: 1.1rem; color: #ff7f20; }
 
-#mainBox { position: relative; width: 100%; height: 800px; padding-top: 100px; }
+#mainBox { position: relative; top: 100px; width: 100%; height: auto; margin-bottom: 400px; }
 
 #mainBox .mainLine_01 { width: 1250px; height: 600px; margin: 0.1rem auto; border: 1px solid #ff7f20; }
 
@@ -25,32 +27,36 @@
 
 #mainBox .mainLine_01 .mainLine_02 .mainLine_03 { width: 1230px; height: 580px; margin: 0.2rem auto; border: 1px solid #ff7f20; }
 
-#mainBox .mainLine_01 .mainLine_02 .mainLine_03 p { position: absolute; font-size: 5rem; font-family: "GyeonggiTitle", "NanumSquare"; font-weight: bold; color: #fff; }
+#mainBox .mainLine_01 .mainLine_02 .mainLine_03 p { position: absolute; font-size: 5rem; font-family: "GyeonggiTitle", "NanumSquare"; font-weight: bold; text-transform: capitalize; color: #fff; }
 
-#mainBox .mainLine_01 .mainLine_02 .mainLine_03 .mainText_01 { margin: 15.4rem 28.2rem; text-transform: capitalize; -webkit-text-stroke: 3px #ff7f20; }
+#mainBox .mainLine_01 .mainLine_02 .mainLine_03 .mainText_01 { margin: 15.4rem 28.2rem; -webkit-text-stroke: 3px #ff7f20; text-shadow: 0.2rem 0.2rem 0 #fff, 0.4rem 0.4rem 0 #ffe590; }
 
-#mainBox .mainLine_01 .mainLine_02 .mainLine_03 .mainText_02 { z-index: -10; margin: 15.7rem 28.5rem; text-transform: capitalize; -webkit-text-stroke: 3px #ffe59d; }
+#profileBox { width: 100%; height: auto; margin-bottom: 400px; }
 
-#viewBox { width: 100%; height: 900px; }
+#profileBox .profile { text-align: center; font-weight: bold; font-family: 'NanumSquare'; transform: skew(-0.03deg); }
 
-#viewBox .profile { text-align: center; font-weight: bold; }
+#profileBox .profile .pro_01 { width: 172px; height: 57px; margin: 2rem auto; padding-top: 0.7rem; background-color: #ff7f20; color: #fff; box-sizing: border-box; text-align: center; font-weight: bold; font-size: 2rem; }
 
-#viewBox .profile .pro_01 { width: 172px; height: 57px; margin: 2rem auto; padding-top: 0.7rem; background-color: #ff7f20; color: #fff; box-sizing: border-box; font-size: 2rem; }
+#profileBox .profile .pro_02 { margin-top: 4rem; font-size: 2rem; }
 
-#viewBox .profile .pro_02 { margin-top: 4rem; font-size: 2rem; }
+#profileBox .profile .pro_04 { margin: 2rem; }
 
-#viewBox .profile .pro_04 { margin: 2rem; }
+#profileBox .profile .pro_05 { width: 400px; height: 400px; margin: 2rem auto; border: 1px solid #ff7f20; }
 
-#viewBox .profile .pro_05 { width: 400px; height: 400px; margin: 2rem auto; border: 1px solid #ff7f20; }
+#profileBox .profile .pro_icon { width: 6.5rem; margin: 0 auto; }
 
-#viewBox .profile .pro_icon { width: 6.5rem; margin: 0 auto; }
+#profileBox .profile .pro_icon .pro_06 { float: left; font-size: 3rem; font-family: 'icomoon'; font-style: normal; }
 
-#viewBox .profile .pro_icon .pro_06 { float: left; font-size: 3rem; font-family: 'icomoon'; font-style: normal; }
+#profileBox .profile .pro_icon .pro_07 { float: left; margin-left: 0.5rem; font-size: 3rem; font-family: 'icomoon'; font-style: normal; }
 
-#viewBox .profile .pro_icon .pro_07 { float: left; margin-left: 0.5rem; font-size: 3rem; font-family: 'icomoon'; font-style: normal; }
+#profileBox .profile .pro_icon a { color: #111; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
 
-#viewBox .profile .pro_icon a { color: #111; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
+#profileBox .profile .pro_icon a:hover { color: #fff; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7); }
 
-#viewBox .profile .pro_icon a:hover { color: #fff; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7); }
+#skillBox { width: 100%; height: 700px; }
 
-#footBox { width: 100%; height: 150px; background-color: #777; }
+#skillBox .skills { width: 172px; height: 57px; margin: 2rem auto; padding-top: 0.7rem; background-color: #ff7f20; color: #fff; box-sizing: border-box; text-align: center; font-weight: bold; font-size: 2rem; font-family: 'NanumSquare'; transform: skew(-0.03deg); }
+
+#conBox { width: 100%; height: 700px; }
+
+#conBox .portfolio { width: 172px; height: 57px; margin: 2rem auto; padding-top: 0.7rem; background-color: #ff7f20; color: #fff; box-sizing: border-box; text-align: center; font-weight: bold; font-size: 2rem; font-family: 'NanumSquare'; transform: skew(-0.03deg); }

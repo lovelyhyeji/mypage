@@ -14,7 +14,7 @@
   <meta name="keyword" content="html, css, js, web, design, 웹디자인, xido, 시도웹">
   <meta name="author" content="xido 강사">
   <meta name="generator" content="illustrator, photoshop, sublimetext, vscode">
-  <link rel="stylesheet" href="../font/fontawesome/js/all.css">
+  <link rel="stylesheet" href="../font/fontawesome/css/all.css">
   <link rel="stylesheet" href="../font/gyeonggi/stylesheet.css">
   <link rel="stylesheet" href="../css/base/reset.css">
   <link rel="stylesheet" href="../css/base/common.css">
@@ -34,27 +34,28 @@
 <div id="wrap">
   <header id="headBox">
     <nav id="navBox">
-      <h1><a href="#headbox"><span class="hidden">logo</span></a></h1>
+      <h1><a href="#headbox">
+        <span class="hidden">logo<i class="icon-home_icon"></i>
+        </span></a></h1>
       <ul>
-        <li><a href="#">profile</a></li>
-        <li><a href="#">skills</a></li>
-        <li><a href="#">portfolio</a></li>
+        <li><a href="#profileBox">profile</a></li>
+        <li><a href="#skillBox">skills</a></li>
+        <li><a href="#conBox">portfolio</a></li>
       </ul>
     </nav>
   </header>
 <!-- ================================= -->
   <main id="mainBox">
-    <ul class="mainLine_01">
-      <li class="mainLine_02">
+    <div class="mainLine_01">
+      <div class="mainLine_02">
         <div class="mainLine_03">
           <p class="mainText_01">portfolio</p>
-          <p class="mainText_02">portfolio</p>
         </div>
-      </li>
-    </ul>
+      </div>
+    </div>
   </main>
 <!-- ================================= -->
-  <article id="viewBox">
+  <article id="profileBox">
     <ul class="profile">
       <li class="pro_01">profile</li>
       <li class="pro_02">이혜지</li>
@@ -66,11 +67,15 @@
         <ul class="pro_07"><a href="#"><i class="icon-phone"></i></a></ul>
       </li>
     </ul>
-
-
   </article>
 <!-- ================================= -->
-  <footer id="footBox"></footer>
+  <section id="skillBox">
+    <div class="skills">skills</div>
+  </section>
+<!-- ================================= -->
+  <article id="conBox">
+    <div class="portfolio">portfolio</div>
+  </article>
 </div>
 <!-- script ========================== -->
   <script src="../js/base/jquery-3.4.1.min.js"></script>

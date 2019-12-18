@@ -1,37 +1,42 @@
 /* portfolio.css */
 $w : 100%;
+$c : #ff7f20;
 $myfont :'GyeonggiTitle','NanumSquare';
 @import url("https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css");
-@import url(../icon/icomoon/style.css);
+@import url("../icon/icomoon/style.css");
+@mixin fontSet(){font-family:'NanumSquare'; transform:skew(-0.03deg);}
+@mixin subTitle(){width:172px; height:57px; margin:2rem auto; padding-top:0.7rem; background-color:$c;
+  color:#fff; box-sizing:border-box; text-align:center; font-weight:bold; font-size:2rem;}
 // ===========================================================================================
-#wrap{position:relative; width:1280px; height:auto; font-family:'NanumSquare'; transform:skew(-0.03deg);}
+#wrap{width:1280px; height:auto;}
 // ===========================================================================================
-#headBox{width:1280px; margin-top:3rem;
-  #navBox{position:fixed; z-index:500; width:$w; height:100px;
-    h1{position:absolute; z-index:510; width:150px; height:70px; margin:1rem;
-       background-color:#aaa;}
+#headBox{position:fixed; left:0; top:0; z-index:500; width:$w; height:100px; background-color:#fff;
+  #navBox{width:1280px; height:100%; margin:0 auto; background-color:transparent; @include fontSet;
+    h1{
+      a{display:block; width:100%; height:100%;
+        i{font-size:5rem; color:#111}}};
     ul{float:right; margin-top:2.5rem;
-      li{float:left; width:50px; margin-right:5rem; font-weight:bold;
-        a{color:#111;}
-        a:hover{font-size:1.1rem; color:#ff7f20;}
+      li{float:left; width:100px; margin-left:2rem; font-weight:bold;
+        a{display:block; color:#111; padding:1rem; transition:all 0.5s ease;}
+        a:hover{font-size:1.1rem; color:$c;}
 }}}} //#headBox
 // ===========================================================================================
-#mainBox{position:relative; width:$w; height:800px; padding-top:100px;
-  .mainLine_01{width:1250px; height:600px; margin:0.1rem auto; border:1px solid #ff7f20;
-  .mainLine_02{width:1240px; height:590px; margin:0.3rem auto; border:1px solid #ff7f20;
-    .mainLine_03{width:1230px; height:580px; margin:0.2rem auto; border:1px solid #ff7f20;
-      p{position:absolute; font-size:5rem; font-family:$myfont; font-weight:bold; color:#fff;}
-      .mainText_01{margin:15.4rem 28.2rem; text-transform:capitalize; -webkit-text-stroke:3px #ff7f20;}
-      .mainText_02{z-index:-10; margin:15.7rem 28.5rem; text-transform:capitalize; -webkit-text-stroke:3px #ffe59d;}
+#mainBox{position:relative;top:100px; width:$w; height:auto; margin-bottom:400px;
+  .mainLine_01{width:1250px; height:600px; margin:0.1rem auto; border:1px solid $c;
+  .mainLine_02{width:1240px; height:590px; margin:0.3rem auto; border:1px solid $c;
+    .mainLine_03{width:1230px; height:580px; margin:0.2rem auto; border:1px solid $c;
+      p{position:absolute; font-size:5rem; font-family:$myfont; font-weight:bold;
+        text-transform:capitalize; color:#fff;}
+      .mainText_01{margin:15.4rem 28.2rem; -webkit-text-stroke:3px $c;
+         text-shadow:0.2rem 0.2rem 0 #fff, 0.4rem 0.4rem 0 #ffe590;}
 }}}} //#mainBox
 // ===========================================================================================
-#viewBox{width:$w; height:900px;
-  .profile{text-align:center; font-weight:bold;
-    .pro_01{width:172px; height:57px; margin:2rem auto; padding-top:0.7rem; background-color:#ff7f20;
-            color:#fff; box-sizing:border-box; font-size:2rem;}
+#profileBox{width:$w; height:auto; margin-bottom:400px;
+  .profile{text-align:center; font-weight:bold; @include fontSet;
+    .pro_01{@include subTitle;}
     .pro_02{margin-top:4rem; font-size:2rem;}
     .pro_04{margin:2rem;}
-    .pro_05{width:400px; height:400px; margin:2rem auto; border:1px solid #ff7f20;}
+    .pro_05{width:400px; height:400px; margin:2rem auto; border:1px solid $c;}
     .pro_icon{width:6.5rem; margin:0 auto;
       .pro_06{float:left; font-size:3rem; font-family:'icomoon'; font-style:normal;}
       .pro_07{float:left; margin-left:0.5rem; font-size:3rem; font-family:'icomoon'; font-style:normal;}
@@ -39,4 +44,8 @@ $myfont :'GyeonggiTitle','NanumSquare';
         a:hover{color:#fff; text-shadow:1px 1px 1px rgba(0,0,0,0.7);}
 }}} //#viewBox
 // ===========================================================================================
-#footBox{width:$w; height:150px; background-color:#777;}
+#skillBox{width:$w; height:700px;
+  .skills{@include subTitle; @include fontSet;}}
+// ===========================================================================================
+#conBox{width:$w; height:700px;
+  .portfolio{@include subTitle; @include fontSet;}}
